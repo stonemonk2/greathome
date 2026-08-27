@@ -20,6 +20,26 @@ prices. Kill or update it before posting anywhere new.
 
 ---
 
+## ⚠️ Do NOT carry these over from the old Apartments.com copy
+
+The May placeholder description contains four things that must not be republished.
+
+| In the old copy | Reality |
+|---|---|
+| **"1300 square foot apartment"** | **Unit A is 650 sqft.** The 1300 figure belongs to the bottom unit, which takes its whole floor — it leaked into Unit A's copy. Advertising double the real size is a serious misrepresentation and the kind of thing a tenant can void a lease over. Do not repeat it. **Zillow's 675 is also wrong — correct the field to 650.** |
+| "Applicants must have very clean credit and **no criminal record**" | Replace with the stated criteria plus "Housing vouchers welcome." A blanket no-criminal-record rule is disparate-impact exposure under HUD guidance even for private landlords. |
+| "Richmond's **best** public elementary school" | Drop the superlative — ranking a school invites both an accuracy challenge and a familial-status steering argument. Name it plainly: "Washington Elementary School is four blocks away." |
+| "Richmond requires **annual** inspections" | Since Ordinance 02-25 N.S. it is **inspection every 3 years** plus an **annual registration fee**. Say "Richmond inspects rental units on a three-year cycle." |
+
+**Screening fees — not an issue here.** Applications run through Zillow and Scott charges
+no separate fee, which sidesteps Civil Code 1950.6 / AB 2493 entirely. Recorded for the day
+that changes: the 2026 cap is **$65.86 per adult**, only actual out-of-pocket cost may be
+charged, the applicant gets their credit report within 7 days, refunds are due within 7 days
+of selecting a tenant, no fee may be charged with no unit available, and accepting a reusable
+screening report (AB 2559) means **no** fee may be charged at all.
+
+---
+
 ## Zillow field corrections
 
 | Field | Currently | Change to |
@@ -28,7 +48,8 @@ prices. Kill or update it before posting anywhere new.
 | Laundry | Shared | **Shared** — but say "shared with one unit only" in the description |
 | Parking | Contact manager | **Street** |
 | Available date | — | **September 1, 2026** |
-| Deposit | — | **$2,600** |
+| Deposit | — | **$2,595** |
+| Square footage | 675 | **650** — 675 is wrong; 1300 is the bottom unit |
 | Pets | — | **Cats allowed**, $40/mo pet rent. No dogs |
 
 Flooring lives at **Manage Rentals → Edit → Property details → Interior → Flooring.**
@@ -51,24 +72,25 @@ than most renovated rentals can quote. Just do not print "luxury vinyl plank."
 > **Refurbished 1BR + office in historic Point Richmond — available September 1**
 >
 > 121 Santa Fe is a triplex built in 1910. Unit A occupies the entire left side of
-> the building — 675 square feet, long and light, taken back to the studs and
+> the building — 650 square feet, long and light, taken back to the studs and
 > rebuilt in 2026. A large living room opens to the kitchen across a granite
 > breakfast bar; behind it sits a medium office with its own closet and window,
 > then the bedroom at the back. The front door opens onto a private side patio and
 > an iron gate, looking across the street at a beautifully restored 1901 home.
 >
 > **One block to town.** Point Richmond is a tiny historic village — restaurants,
-> coffee shops, art stores, two grocery stores and two dental offices, all within a
-> block. In the evening you can catch a play at the 50-seat Masquers Playhouse or
-> find live music at the local bars and restaurants.
+> coffee shops, art galleries, two grocery stores and two dental offices, all within a
+> block. In the evening you can catch a play at the 50-seat Masquers Playhouse, have a
+> long dinner at Hotel Mac, or find live music at a nearby bar.
 >
-> **A mile to the hills.** The Point Richmond hills hold a maze of trails with
-> three-bridge views — the Golden Gate, the Richmond–San Rafael, and the Bay Bridge.
+> **A mile to the hills.** The Point Richmond hills hold a maze of trails for hiking and
+> mountain biking, with three-bridge views — the Golden Gate, the Richmond–San Rafael,
+> and the Bay Bridge.
 >
 > **Getting around.** A bus stop one block away puts BART about 15 minutes out. The
 > Richmond ferry terminal runs to the San Francisco Ferry Building. I-580 west over
 > the Richmond–San Rafael Bridge puts Marin roughly fifteen minutes away; eastbound
-> it connects to the I-80 corridor. A K–6 school is three blocks away.
+> it connects to the I-80 corridor. Washington Elementary School is four blocks away.
 >
 > **New in 2026:**
 > • All-new kitchen — cabinetry, Luna Pearl granite counters and backsplash
@@ -83,42 +105,129 @@ than most renovated rentals can quote. Just do not print "luxury vinyl plank."
 > • Fresh paint, new doors, trim and baseboards
 > • Blinds and blackout curtains already installed
 > • AT&T Fiber — ONT installed in-unit, ready to activate
+> • Windows in every room; tall gas wall heater
+> • Private concrete patio at the front door, behind an iron gate
+> • 6x8 storage shed in the back yard available at below-market rent — ask
 >
 > **Laundry:** A washer and dryer in the shed out back, shared with just one
 > neighboring unit — plus an excellent laundromat less than a block away.
 >
-> **The details:** $2,600/mo · $2,600 deposit · 12-month lease · available
-> September 1, 2026 · street parking · private patio and garden · tenant pays gas,
-> electric and internet · owner pays water, sewer and trash · cats welcome with
-> $40/mo pet rent, no dogs.
+> **The details:** $2,595/mo · $2,595 deposit · 12-month lease · available
+> September 1, 2026 · street parking only · private patio · no smoking · tenant pays
+> PG&E and any optional phone/cable/internet · **owner pays water, sewer, trash and
+> gardening** · cats welcome with $40/mo pet rent, no dogs. Richmond inspects rental
+> units on a three-year cycle.
 >
-> **Screening:** All applicants 18+ complete an application with credit and
-> background screening, verifiable income of at least 2.5× the rent, and rental
-> history references. Housing vouchers welcome. Applications are reviewed in the
-> order received against the same criteria for everyone.
->
-> Full photos, video walkthrough and details: **greathome.us/121a**
+> **Screening:** Applications are handled through Zillow's rental application —
+> we charge no separate application fee. Housing vouchers welcome. Applications are
+> reviewed in the order received against the same criteria for everyone.
 >
 > Equal Housing Opportunity.
 
-*Zillow strips URLs from descriptions inconsistently — leave the greathome.us line
-in and see whether it survives. It reliably works on Craigslist and Facebook.*
+> ⚠️ **Do not put a URL in the Zillow description.** Confirmed Aug 26, 2026: Zillow
+> detects the link and **blocks the save outright** — it is not a silent strip, the
+> listing will not save at all. The greathome.us line has been removed from the
+> version above. Keep it in the Craigslist and Facebook versions, where links work.
+>
+> To get prospects to the page from Zillow anyway: send the link in your reply to
+> each inquiry (Zillow's messaging allows it), and print a QR code on the
+> front-fence flyer.
 
 ---
 
-## Craigslist version
+## Craigslist — ✅ LIVE, needs three edits
 
-Craigslist rewards plain text and a clear title. Post under
-**housing → apts/housing for rent**, roughly $5 in the Bay Area.
+**Live post:** `craigslist.org/view/d/richmond-renovated-1br-office-in-point/ukgBxCoxMLmxMBck8qMD5P`
 
-**Title:** `Renovated 1BR + Office in Point Richmond — walk to everything — $2600`
+Read Aug 26, 2026. The structured **sq ft field is correctly set to 650** — but the body
+text still says 675, and it predates the latest round of facts. Three fixes:
 
-Use the same body as above. Craigslist allows the link, so put
-`https://www.greathome.us/121a` near the top as well as the bottom, and upload
-the best 12–16 photos directly (Craigslist users largely do not click through).
+1. **Body says "675 square feet" → change to 650**
+2. **Owner-pays line is missing gardening** — should read water, sewer, trash and gardening
+3. **Screening line still says "verifiable income of 2.5× rent and credit/background
+   screening"** — replace with the Zillow-application wording below
 
-**Repost every 48 hours** — Craigslist ranks by recency and a listing falls off
-the first page fast.
+Also missing and worth adding: the storage shed, Hotel Mac, mountain biking, art galleries,
+windows in every room, and the greathome.us link (Craigslist allows links — Zillow does not).
+
+### Paste-ready body
+
+```
+Refurbished 1BR + office in historic Point Richmond — available September 1
+
+Full photos and video walkthrough: https://www.greathome.us/121a
+
+121 Santa Fe is a triplex built in 1910. Unit A occupies the entire left side of
+the building — 650 square feet, long and light, with windows in every room and a
+tall gas wall heater. Taken back to the studs and rebuilt in 2026.
+
+A large living room opens to the kitchen across a granite breakfast bar; behind it
+sits a medium office with its own closet and window, then the bedroom at the back.
+The front door opens onto a private concrete patio behind an iron gate, looking
+across the street at a beautifully restored 1901 home.
+
+ONE BLOCK TO TOWN
+Point Richmond is a tiny historic village — restaurants, coffee shops, art
+galleries, two grocery stores and two dental offices, all within a block. In the
+evening: a play at the 50-seat Masquers Playhouse, a long dinner at Hotel Mac, or
+live music at a nearby bar. A laundromat is under a block away.
+
+A MILE TO THE HILLS
+The Point Richmond hills hold a maze of trails for hiking and mountain biking,
+with three-bridge views — the Golden Gate, the Richmond–San Rafael, and the Bay
+Bridge.
+
+GETTING AROUND
+A bus stop one block away puts BART about 15 minutes out. The Richmond ferry
+terminal runs to the San Francisco Ferry Building. I-580 west over the
+Richmond–San Rafael Bridge puts Marin roughly fifteen minutes away; eastbound it
+connects to the I-80 corridor. Washington Elementary School is four blocks away.
+
+NEW IN 2026
+- All-new kitchen — cabinetry, Luna Pearl granite counters and backsplash
+- Undermount workstation sink with integrated cutting board
+- Stainless refrigerator, 860 CFM stainless range hood, gas range
+- All-new bathroom — vanity, medicine cabinet, lighting, fixtures, toilet
+- Milgard V400 double-hung windows throughout
+- New roof (sealed SPF foam, August 2026)
+- 12mm AC5-rated laminate flooring throughout
+- Raised ceilings in the kitchen and bathroom
+- New electrical, LED lighting throughout, GFCI protection
+- Fresh paint, new doors, trim and baseboards
+- Blinds and blackout curtains already installed
+- AT&T Fiber — ONT installed in-unit, ready to activate
+
+LAUNDRY
+Washer and dryer in the utility room out back, shared with just one neighboring
+unit. A laundromat is under a block away for anything large.
+
+EXTRA STORAGE
+A 6x8 shed in the back yard is available at below-market rent — ask.
+
+THE DETAILS
+$2,595/mo · $2,595 deposit · 12-month lease · available September 1, 2026
+Street parking only · private patio · no smoking
+Tenant pays PG&E and any optional phone/cable/internet
+Owner pays water, sewer, trash and gardening
+Cats welcome with $40/mo pet rent — no dogs
+Richmond inspects rental units on a three-year cycle
+
+SCREENING
+Applications are handled through Zillow's rental application — we charge no
+separate application fee. Housing vouchers welcome. Applications are reviewed in
+the order received against the same criteria for everyone.
+
+Photos and video: https://www.greathome.us/121a
+
+Equal Housing Opportunity.
+```
+
+**Title:** `Renovated 1BR + Office in Point Richmond — walk to everything — $2595`
+
+Upload the best 12–16 photos directly — most Craigslist users never click through.
+
+**Repost every 48 hours.** Craigslist ranks by recency and a listing falls off page one
+fast. This is the highest-return two minutes in the whole syndication plan.
 
 ---
 
@@ -126,7 +235,7 @@ the first page fast.
 
 Shorter. People scroll.
 
-> **Renovated 1BR + Office — Point Richmond — $2,600/mo**
+> **Refurbished 1BR + Office — Point Richmond — $2,595/mo**
 >
 > Rebuilt to the studs in 2026. One block from coffee, restaurants, two grocery
 > stores and the playhouse. New kitchen with granite counters and stainless
@@ -134,11 +243,15 @@ Shorter. People scroll.
 > AT&T Fiber ready.
 >
 > Separate office in addition to the bedroom — real space to work from home.
+> 650 sq ft, windows in every room, private patio behind an iron gate.
+> One mile to trails with Golden Gate / Bay Bridge views. Bus to BART, one block.
 >
-> $2,600/mo · $2,600 deposit · 12-month lease · available Sept 1
-> Shared laundry (one other unit only) · street parking · private patio
+> $2,595/mo · $2,595 deposit · 12-month lease · available Sept 1
+> Laundry shared with one other unit · street parking only · no smoking
 > Cats welcome ($40/mo pet rent) · no dogs
-> Owner pays water, sewer and trash
+> Owner pays water, sewer, trash and gardening
+> 6x8 storage shed available at below-market rent — ask
+> Applications through Zillow — no separate application fee
 >
 > Photos and video: greathome.us/121a
 
