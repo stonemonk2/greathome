@@ -1,0 +1,22 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Photo/video originals: too large for git, and GitHub hard-fails files >100MB.
+# Only web-optimized derivatives are committed.
+121a/121a-images/121a-images-2026/
+121a/121a-images/121a-images-reshoot/
+121a/121a-images/_staged-raw/
+*.mp4
+*.MP4
+*.mov
+*.MOV
+
+node_modules/
+
+# image-review contact sheets
+121a/121a-images/web/_sheet-*.jpg
+
+# tenant testimonial source — quoted as text on the page, not published
+121a/10-year-prior-tenant.png

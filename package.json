@@ -1,0 +1,12 @@
+{
+  "name": "greathome",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "optimize": "node scripts/optimize-images.mjs",
+    "stage": "node scripts/stage.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}
