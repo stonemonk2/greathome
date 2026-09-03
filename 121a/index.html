@@ -11,7 +11,7 @@
 <meta property="og:title" content="121 Santa Fe Ave, Unit A — Point Richmond">
 <meta property="og:description" content="Renovated 1BR + office, one block from the heart of Point Richmond. $2,595/mo, available September 1.">
 <meta property="og:url" content="https://www.greathome.us/121a/">
-<meta property="og:image" content="https://www.greathome.us/121a/121a-images/web/20260816-43.webp">
+<meta property="og:image" content="https://www.greathome.us/121a/121a-images/web/20260830-05.webp">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314110F'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' font-weight='700' fill='%23B8873A' text-anchor='middle'%3EGH%3C/text%3E%3C/svg%3E">
@@ -147,6 +147,36 @@
     letter-spacing:0.09em;text-transform:uppercase;
     padding:4px 9px;border-radius:100px;
   }
+
+  /* ---- staged / real comparison ---- */
+  /* One pair per row: side by side only works if each frame is big enough to
+     actually read against the other. */
+  .pairs{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px;}
+  .pair{
+    border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
+  }
+  .pair-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);}
+  .pair-imgs figure{
+    position:relative;margin:0;padding:0;border:0;background:var(--card);
+    aspect-ratio:4/3;cursor:zoom-in;
+  }
+  .pair-imgs img{width:100%;height:100%;object-fit:cover;display:block;}
+  .pair-label{
+    position:absolute;top:8px;left:8px;z-index:1;
+    font-size:10px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;
+    padding:4px 9px;border-radius:100px;
+    background:rgba(20,17,15,0.84);border:1px solid rgba(237,230,218,0.28);color:var(--ink);
+  }
+  .pair-label.is-staged{border-color:rgba(184,135,58,0.5);color:var(--gold);}
+  .pair-name{
+    padding:12px 16px 14px;font-size:13.5px;color:var(--muted);line-height:1.5;
+  }
+  .pair-name strong{
+    display:block;font-family:'Fraunces',serif;font-weight:600;
+    font-size:16px;color:var(--ink);margin-bottom:2px;
+  }
+  /* .pair-imgs stays two-up at every width on purpose: stacking the frames
+     would put them on separate screens, which defeats the comparison. */
 
   /* ---- lightbox ---- */
   dialog#lb{
@@ -348,10 +378,27 @@
   </section>
 
   <!-- ================= GALLERY ================= -->
+  <!-- ================= STAGED vs REAL ================= -->
+  <section id="staged">
+    <div class="prose">
+      <p class="kicker">Furnished, or not</p>
+      <h2>Staged — and exactly as it is.</h2>
+      <p class="sub">
+        Every staged image below started as the empty photograph beside it. Furniture was
+        added and nothing else: no wall repainted, no appliance upgraded, no view invented
+        through a window. Compare them side by side, then judge the apartment on the
+        unfurnished set further down.
+      </p>
+    </div>
+    <div class="pairs" id="pairs"></div>
+  </section>
+
+  <!-- ================= PHOTOS ================= -->
   <section id="photos">
     <div class="prose">
       <p class="kicker">Photos</p>
-      <h2>Inside.</h2>
+      <h2>Every room, unfurnished.</h2>
+      <p class="sub">Photographed August 30, 2026, after the rebuild. Nothing staged from here on.</p>
     </div>
     <div class="grid" id="grid"></div>
   </section>
@@ -495,35 +542,82 @@
 </dialog>
 
 <script>
-// Gallery is data-driven so swapping in the reshoot means editing this list only.
+// Both galleries are data-driven: swapping photos means editing these two lists
+// and nothing else. Slugs are the Aug 30 marketing reshoot.
+
+// Each pair renders the unfurnished frame beside the staged one derived from it.
+// Room identification is not guesswork — the office is the room with one closet
+// and one window, matching the previously labelled 20260816-14.
+const PAIRS = [
+  { room:'Living room', f:'20260830-54',
+    n:'A sofa, coffee table, rug, lamp and plant. The granite bar, the wall sconce and both windows are exactly as photographed.' },
+  { room:'Bedroom', f:'20260830-46',
+    n:'A queen shown at true size, against the far wall — which is where one fits, snugly. This is a compact room and the photograph is not trying to hide it.' },
+  { room:'Office / flex room', f:'20260830-21',
+    n:'A desk, task chair and small shelf. This is the room that makes the unit work as a one-bedroom you can also work in.' },
+  { room:'Kitchen', f:'20260830-05',
+    n:'A cutting board and a bowl of fruit on the counter — nothing else. The cabinets, granite and appliances are untouched.' },
+];
+
 const PHOTOS = [
-  { f:'staged/20260816-43-staged', c:'Living room, looking toward the front window', staged:true },
-  { f:'20260816-40', c:'Living room, looking back toward the kitchen' },
-  { f:'20260816-47', c:'Entry and front door' },
-  { f:'20260816-39', c:'Kitchen open to the living room' },
-  { f:'20260816-38', c:'Granite breakfast bar at the pass-through' },
-  { f:'20260816-27', c:'Kitchen — granite, stainless, gas range' },
-  { f:'20260816-28', c:'Range and stainless hood' },
-  { f:'20260816-36', c:'Cabinetry and hood' },
-  { f:'20260816-33', c:'Undermount workstation sink with cutting board' },
-  { f:'20260816-22', c:'Bathroom — new vanity and medicine cabinet' },
-  { f:'20260816-20', c:'Bathroom shower' },
-  { f:'20260816-14', c:'Office / flex room with closet' },
-  { f:'20260816-16', c:'Office / flex room' },
-  { f:'20260816-01', c:'Bedroom' },
-  { f:'20260816-03', c:'Bedroom closet' },
-  { f:'20260816-08', c:'Outlook from the office window' },
+  { f:'20260830-61', c:'Living room, looking to the front door' },
+  { f:'20260830-54', c:'Living room, windows on two walls' },
+  { f:'20260830-57', c:'Living room, open to the kitchen' },
+  { f:'20260830-64', c:'Granite breakfast bar at the pass-through' },
+  { f:'20260830-51', c:'The long view — kitchen through to the front' },
+  { f:'20260830-05', c:'Kitchen — granite, stainless, gas range' },
+  { f:'20260830-52', c:'Gas range under the stainless hood' },
+  { f:'20260830-09', c:'Stainless hood over the range' },
+  { f:'20260830-07', c:'Cabinets, open' },
+  { f:'20260830-72', c:'Undermount workstation sink with cutting board' },
+  { f:'20260830-21', c:'Office / flex room' },
+  { f:'20260830-22', c:'The office closet' },
+  { f:'20260830-46', c:'Bedroom, windows on two walls' },
+  { f:'20260830-44', c:'Bedroom, from the doorway' },
+  { f:'20260830-26', c:'Bathroom — vanity and medicine cabinet' },
+  { f:'20260830-33', c:'Bathroom shower' },
+  { f:'20260830-36', c:'Vanity' },
+  { f:'20260830-48', c:'Back down the hall' },
 ];
 const BASE = '121a-images/web/';
 
+// One flat list behind the lightbox so arrow keys walk the pairs and the
+// gallery as a single sequence.
+const LB = [];
+const reg = (f, c, staged) => (LB.push({ f, c, staged }), LB.length - 1);
+
+document.getElementById('pairs').innerHTML = PAIRS.map((p) => {
+  const real = reg(p.f, `${p.room} — as it is, unfurnished`, false);
+  const staged = reg(`staged/${p.f}-staged`, `${p.room} — virtually staged`, true);
+  return `
+  <div class="pair">
+    <div class="pair-imgs">
+      <figure data-i="${real}" tabindex="0" role="button"
+              aria-label="${p.room}, unfurnished — open larger">
+        <span class="pair-label">As it is</span>
+        <img src="${BASE}${p.f}-thumb.webp" alt="${p.room}, unfurnished" loading="lazy" decoding="async">
+      </figure>
+      <figure data-i="${staged}" tabindex="0" role="button"
+              aria-label="${p.room}, virtually staged — open larger">
+        <span class="pair-label is-staged">Virtually staged</span>
+        <img src="${BASE}staged/${p.f}-staged-thumb.webp" alt="${p.room}, virtually staged" loading="lazy" decoding="async">
+      </figure>
+    </div>
+    <p class="pair-name"><strong>${p.room}</strong>${p.n}</p>
+  </div>`;
+}).join('');
+
 const grid = document.getElementById('grid');
-grid.innerHTML = PHOTOS.map((p, i) => `
+grid.innerHTML = PHOTOS.map((p) => {
+  const i = reg(p.f, p.c, p.staged);
+  return `
   <figure class="shot" data-i="${i}" tabindex="0" role="button"
           aria-label="${p.c} — open larger">
     ${p.staged ? '<span class="staged-tag">Virtually staged</span>' : ''}
     <img src="${BASE}${p.f}-thumb.webp" alt="${p.c}" loading="lazy" decoding="async">
     <figcaption>${p.c}</figcaption>
-  </figure>`).join('');
+  </figure>`;
+}).join('');
 
 const lb = document.getElementById('lb');
 const lbImg = document.getElementById('lb-img');
@@ -531,27 +625,30 @@ const lbCap = document.getElementById('lb-cap');
 let idx = 0;
 
 function show(i) {
-  idx = (i + PHOTOS.length) % PHOTOS.length;
-  const p = PHOTOS[idx];
+  idx = (i + LB.length) % LB.length;
+  const p = LB[idx];
   lbImg.src = BASE + p.f + '.webp';
   lbImg.alt = p.c;
-  lbCap.textContent = `${p.c} — ${idx + 1} of ${PHOTOS.length}`;
+  lbCap.textContent = `${p.c} — ${idx + 1} of ${LB.length}`;
 }
 
-grid.addEventListener('click', (e) => {
-  const fig = e.target.closest('.shot');
-  if (!fig) return;
-  show(+fig.dataset.i);
-  lb.showModal();
-});
-grid.addEventListener('keydown', (e) => {
-  if (e.key !== 'Enter' && e.key !== ' ') return;
-  const fig = e.target.closest('.shot');
-  if (!fig) return;
-  e.preventDefault();
-  show(+fig.dataset.i);
-  lb.showModal();
-});
+// Same open behaviour for the comparison pairs and the gallery.
+for (const el of [document.getElementById('pairs'), grid]) {
+  el.addEventListener('click', (e) => {
+    const fig = e.target.closest('figure[data-i]');
+    if (!fig) return;
+    show(+fig.dataset.i);
+    lb.showModal();
+  });
+  el.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const fig = e.target.closest('figure[data-i]');
+    if (!fig) return;
+    e.preventDefault();
+    show(+fig.dataset.i);
+    lb.showModal();
+  });
+}
 
 document.getElementById('lb-close').onclick = () => lb.close();
 document.getElementById('lb-prev').onclick = () => show(idx - 1);

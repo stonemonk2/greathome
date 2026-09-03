@@ -15,6 +15,7 @@
     "opentype.js": "^2.0.0",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.3.289",
+    "puppeteer-core": "^25.9.0",
     "qrcode": "^1.5.4"
   }
 }

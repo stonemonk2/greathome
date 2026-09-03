@@ -145,7 +145,19 @@ text still says 675, and it predates the latest round of facts. Three fixes:
 1. **Body says "675 square feet" → change to 650**
 2. **Owner-pays line is missing gardening** — should read water, sewer, trash and gardening
 3. **Screening line still says "verifiable income of 2.5× rent and credit/background
-   screening"** — replace with the Zillow-application wording below
+   screening"** — the income standard is now **2× rent**, not 2.5×. Replace the whole
+   line with the Zillow-application wording below, which states the criteria without
+   putting a multiple in the ad copy.
+
+> **The income standard is 2× monthly rent.** Changed from 2.5× on Sept 2, 2026 — use 2×
+> in every future Zillow, Craigslist and Apartments.com post, and do not let the old 2.5×
+> language get copied forward from the May placeholder text.
+>
+> ⚠️ **For a voucher holder, apply the multiple to the tenant-paid portion, not the full
+> rent.** California source-of-income protection (Gov. Code §12955, as amended by SB 329)
+> makes a housing subsidy part of the applicant's income, and applying a rent multiple to
+> the full contract rent is the standard way landlords fall foul of it. Since this listing
+> says "Housing vouchers welcome," the two have to agree.
 
 Also missing and worth adding: the storage shed, Hotel Mac, mountain biking, art galleries,
 windows in every room, and the greathome.us link (Craigslist allows links — Zillow does not).

@@ -55,6 +55,21 @@ PLACEMENT — a staged room has to be a room someone could actually live in:
   would block a door from opening. Leave the full swing of every door clear.
 - Do NOT block a window, a closet, a heater/wall furnace, or an electrical panel.
 - Leave a walkable path from each doorway into the room.
+
+SCALE — every item must be the size that item really is:
+- Judge the size of the room from the fixed references in the frame before
+  placing anything. An interior door is about 32in wide and 80in tall. A light
+  switch or outlet plate is about 2.75in wide. A floor plank is about 7in wide.
+  A baseboard is about 3.5in tall. A window sill sits about 30in off the floor.
+- Real furniture dimensions: queen bed 60x80in, full 54x75in, twin 38x75in.
+  Nightstand about 20in wide. Three-seat sofa about 84in long, 35in deep.
+  Coffee table about 48x24in. Desk about 48x24in. Dining chair seat 18in high.
+- NEVER shrink a piece to make the room look larger. That is the whole reason
+  this rule exists: an undersized bed silently advertises a bigger room than
+  the one being let.
+- If the named piece would not fit at its true size, place it at its true size
+  anyway even if the room reads tight, or leave it out entirely and stage fewer
+  pieces. Fewer correct pieces beat more shrunken ones.
 Keep the framing and perspective exactly as given.`
 
 const ROOMS = {
@@ -62,9 +77,12 @@ const ROOMS = {
     coffee table, a floor lamp, a low-pile area rug, and one large potted plant.
     Modern, warm, understated — the scale should read comfortable for the room,
     not crowded.`,
-  bedroom: `Virtually stage this empty bedroom. Add a queen bed with neutral
-    linen bedding, two small nightstands with lamps, and a small rug.
-    Leave clear walking space.`,
+  bedroom: `Virtually stage this empty bedroom. Add a queen bed — 60in wide by
+    80in long, at that true size and no smaller — with neutral linen bedding,
+    plus a nightstand on either side ONLY if one genuinely fits at about 20in
+    wide. A small rug is optional. Do not demand clear walking space on all
+    sides: if the bed only fits tight against a wall, show it tight against
+    that wall. A correctly sized bed in a snug room is the honest picture.`,
   office: `Virtually stage this empty room as a home office. Add a simple wooden
     desk, one task chair, a small bookshelf, and a potted plant. Keep it sparse.`,
   kitchen: `Stage this kitchen lightly. Add ONLY small counter items: a wooden
@@ -181,6 +199,18 @@ async function main() {
 
   // slug -> room type. Extend as the reshoot lands.
   const PLAN = {
+    // Aug 30 reshoot — the marketing set. Room identification is not guesswork:
+    // -22 has one closet and one window and matches the already-labelled
+    // 20260816-14, so it is the office; the two-window room (-43..-46) is the
+    // bedroom by elimination, the unit having only these five rooms.
+    '20260830-54': 'living',
+    '20260830-57': 'living',
+    '20260830-46': 'bedroom',
+    '20260830-22': 'office',
+    '20260830-21': 'office',
+    '20260830-05': 'kitchen',
+    '20260830-26': 'bathroom',
+
     '20260816-43': 'living',
     '20260816-40': 'living',
     '20260816-39': 'living',
