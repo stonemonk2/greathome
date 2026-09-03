@@ -49,6 +49,12 @@ ABSOLUTE CONSTRAINTS — these override everything else:
 - Do NOT add a backsplash, tile, moulding or built-in that is not already there.
 - Add ONLY free-standing furniture, rugs, and small decor that a tenant could
   carry out of the room.
+
+PLACEMENT — a staged room has to be a room someone could actually live in:
+- Do NOT place any furniture in front of a door, across a doorway, or where it
+  would block a door from opening. Leave the full swing of every door clear.
+- Do NOT block a window, a closet, a heater/wall furnace, or an electrical panel.
+- Leave a walkable path from each doorway into the room.
 Keep the framing and perspective exactly as given.`
 
 const ROOMS = {

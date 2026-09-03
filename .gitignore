@@ -18,5 +18,12 @@ node_modules/
 # image-review contact sheets
 121a/121a-images/web/_sheet-*.jpg
 
+# Sign proofs and the verification raster: ~9MB, and `node brand/build-sign.mjs`
+# plus `node brand/verify-print.mjs` regenerate them from sign-spec.mjs. The
+# press PDF itself IS committed — it is what actually went to the printer.
+brand/sign-proof*.png
+brand/sign-proof*.svg
+brand/sign-print-raster.png
+
 # tenant testimonial source — quoted as text on the page, not published
 121a/10-year-prior-tenant.png

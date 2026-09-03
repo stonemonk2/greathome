@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1746.000055872 1314.0000420479998" width="61.595cm" height="46.355cm">
+  <g class="common Bleed" id="Bleed">
+    <path d="M 0 0 L 1746.000055872 , 0 L 1746.000055872 , 1314.0000420479998 L 0 , 1314.0000420479998 Z" fill="#ffffff" fill-opacity="0" stroke="#e61937" stroke-opacity="100" stroke-width="1.00000003175" stroke-linecap="butt" stroke-linejoin="round"/>
+  </g>
+  <g class="common Trim" id="Trim">
+    <path d="M 9.000000288 9.000000288 L 1737.0000555840002 , 9.000000288 L 1737.0000555840002 , 1305.0000417600002 L 9.000000288 , 1305.0000417600002 Z" fill="#ffffff" fill-opacity="0" stroke="#1d44b8" stroke-opacity="100" stroke-width="1.00000003175" stroke-linecap="butt" stroke-linejoin="round"/>
+  </g>
+  <g class="common Safety" id="Safety">
+    <path d="M 18.000000576 18.000000576 L 1728.000055296 , 18.000000576 L 1728.000055296 , 1296.000041472 L 18.000000576 , 1296.000041472 Z" fill="#ffffff" fill-opacity="0" stroke="#19ff00" stroke-opacity="100" stroke-width="1.00000003175" stroke-linecap="butt" stroke-linejoin="round"/>
+  </g>
+  <style type="text/css">.common {fill:none;stroke-width:2.8346457600000003} .bleed {stroke:#E61937;} .trim {stroke:#1D44B8;} .safe {stroke:#17E600;} .ornament {stroke: #000000;}  .cut {stroke: #0045AD} .fold {stroke: #CC21A1;}</style>
+</svg>
