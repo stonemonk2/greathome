@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" font-family="Inter, Segoe UI, system-ui, sans-serif">
+  <rect width="1120" height="480" fill="#FBF9F5"/>
+  <text x="60" y="32" font-size="17" font-weight="600" fill="#14110F">121 Santa Fe Unit A — reconstructed plan (DRAFT — do not publish)</text>
+  <text x="60" y="52" font-size="12" fill="#6B655C">Built from the measurements + both sketches. Front of unit at left, back bedroom at right. The front-door wall runs along the bottom. Orange marks = open questions.</text>
+
+  <g transform="translate(60,92) scale(1.5)">
+
+    <rect x="0"   y="0"   width="151" height="110" fill="#DCE6EC"/>
+    <rect x="151" y="0"   width="131" height="160" fill="#DCE6EC"/>
+    <rect x="282" y="0"   width="125" height="32"  fill="#F0EADE"/>
+    <rect x="282" y="32"  width="125" height="128" fill="#E9E1D2"/>
+    <rect x="407" y="0"   width="135" height="110" fill="#DFE7DC"/>
+    <rect x="407" y="40"  width="31"  height="57"  fill="#CFC9BC"/>
+    <rect x="407" y="110" width="108" height="46"  fill="#E4DDEA"/>
+    <rect x="515" y="106" width="27"  height="47"  fill="#CFC9BC"/>
+    <rect x="542" y="0"   width="106" height="153" fill="#EDE2D6"/>
+
+    <line x1="151" y1="0" x2="151" y2="110" stroke="#9AA6AC" stroke-width="1" stroke-dasharray="5 4"/>
+
+    <rect x="280" y="40"  width="6"  height="66" fill="#B8873A"/>
+    <rect x="60"  y="101" width="30" height="9"  fill="#8A8377"/>
+    <rect x="377" y="34"  width="30" height="30" fill="#CBC4B6" stroke="#8A8377" stroke-width="1"/>
+    <rect x="383" y="72"  width="24" height="50" fill="#CBC4B6" stroke="#8A8377" stroke-width="1"/>
+    <rect x="282" y="34"  width="24" height="30" fill="#CBC4B6" stroke="#8A8377" stroke-width="1"/>
+    <rect x="282" y="72"  width="24" height="35" fill="#CBC4B6" stroke="#8A8377" stroke-width="1"/>
+    <rect x="470" y="110" width="45" height="46" fill="#D6CEE0" stroke="#8A8377" stroke-width="1"/>
+
+    <line x1="306" y1="49" x2="377" y2="49" stroke="#C0562B" stroke-width="1"/>
+    <text x="341" y="46" font-size="6" fill="#C0562B" text-anchor="middle">77"</text>
+
+    <g stroke="#14110F" stroke-width="3" stroke-linecap="square" fill="none">
+      <path d="M0,0 L0,38   M0,72 L0,110"/>
+      <path d="M0,0 L163,0  M197,0 L215,0  M245,0 L450,0  M480,0 L570,0  M597,0 L648,0"/>
+      <path d="M648,0 L648,125  M648,144 L648,153"/>
+      <path d="M648,153 L542,153  M542,153 L542,160  M542,160 L151,160  M151,160 L151,110  M151,110 L0,110"/>
+      <path d="M282,32 L282,160"/>
+      <path d="M407,32 L407,160"/>
+      <path d="M407,110 L425,110  M457,110 L515,110"/>
+      <path d="M515,110 L515,156"/>
+      <path d="M542,0 L542,2  M542,29 L542,106  M542,153 L542,160"/>
+      <path d="M407,40 L438,40  M438,97 L407,97"/>
+    </g>
+
+    <g stroke="#14110F" stroke-width="1.6" fill="none">
+      <path d="M197,0 L197,34"/><path d="M163,0 A34,34 0 0 0 197,34"/>
+      <path d="M407,32 L439,32"/><path d="M407,0 A32,32 0 0 1 439,32"/>
+      <path d="M542,29 L569,29"/><path d="M542,2 A27,27 0 0 1 569,29"/>
+      <path d="M425,110 L425,78"/><path d="M457,110 A32,32 0 0 0 425,78"/>
+      <path d="M438,40 L474,40"/><path d="M438,76 A36,36 0 0 0 474,40"/>
+    </g>
+    <path d="M542,106 L542,153" stroke="#8A8377" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+
+    <path d="M6,16 L640,16" stroke="#B8873A" stroke-width="2.5" stroke-dasharray="9 6" fill="none"/>
+    <text x="250" y="12" font-size="6.5" fill="#B8873A" font-weight="600">unobstructed run, front window to back bedroom wall — about 54 ft</text>
+
+    <g font-size="8.5" font-weight="600" fill="#14110F" text-anchor="middle">
+      <text x="75"  y="48">LIVING</text>
+      <text x="216" y="74">DINING / ENTRY</text>
+      <text x="352" y="122">KITCHEN</text>
+      <text x="482" y="52">OFFICE</text>
+      <text x="462" y="140">BATH</text>
+      <text x="595" y="66">BEDROOM</text>
+    </g>
+    <g font-size="6" fill="#4A453D" text-anchor="middle">
+      <text x="75"  y="59">110" x 151" · 115 sf</text>
+      <text x="75"  y="68">ceil 118"</text>
+      <text x="216" y="85">160" x 131" · 146 sf</text>
+      <text x="216" y="94">ceil 118"</text>
+      <text x="352" y="131">125" deep? · ceil ?</text>
+      <text x="482" y="63">110" x 135" · 103 sf</text>
+      <text x="482" y="72">ceil 118"</text>
+      <text x="462" y="149">46" x 108" · ceil ?</text>
+      <text x="595" y="77">153" x 106" · 113 sf</text>
+      <text x="595" y="86">ceil 95" — lowest</text>
+      <text x="344" y="21">HALL 32" — pinch past the fridge</text>
+      <text x="423" y="70" font-size="4.5" transform="rotate(-90 423 70)">closet 57x31</text>
+      <text x="528" y="132" font-size="5" transform="rotate(-90 528 132)">closet 47x24</text>
+    </g>
+    <g font-size="5.5" fill="#6B655C">
+      <text x="168" y="-3">front door 34"</text>
+      <text x="218" y="-3">window</text>
+      <text x="452" y="-3">office window</text>
+      <text x="572" y="-3">window 27x59</text>
+      <text x="-2" y="58" transform="rotate(-90 -2 58)" text-anchor="middle">front window</text>
+      <text x="654" y="136" transform="rotate(-90 654 136)" text-anchor="middle">window 19x44?</text>
+      <text x="62"  y="99">gas heater</text>
+      <text x="290" y="112" transform="rotate(-90 290 112)" text-anchor="middle">granite bar 66"</text>
+      <text x="392" y="80" transform="rotate(-90 392 80)" text-anchor="middle">fridge</text>
+      <text x="395" y="103" transform="rotate(-90 395 103)" text-anchor="middle">sink 50"</text>
+      <text x="294" y="52" transform="rotate(-90 294 52)" text-anchor="middle">stove</text>
+      <text x="294" y="92" transform="rotate(-90 294 92)" text-anchor="middle">ctr 35"</text>
+      <text x="492" y="136" text-anchor="middle">shower?</text>
+      <text x="546" y="40">bed door 27"</text>
+      <text x="412" y="27">office door 32"</text>
+    </g>
+
+    <text x="75" y="150" font-size="6" fill="#9AA6AC" text-anchor="middle">not part of the unit?</text>
+
+    <line x1="0" y1="178" x2="648" y2="178" stroke="#8A8377" stroke-width="1"/>
+    <line x1="0" y1="174" x2="0" y2="182" stroke="#8A8377" stroke-width="1"/>
+    <line x1="648" y1="174" x2="648" y2="182" stroke="#8A8377" stroke-width="1"/>
+    <text x="324" y="188" font-size="6.5" fill="#6B655C" text-anchor="middle">about 648" (54 ft) front wall to back bedroom wall — derived, not measured</text>
+
+    <g fill="#C0562B">
+      <circle cx="344" cy="100" r="7"/><circle cx="392" cy="30" r="7"/><circle cx="75" cy="132" r="7"/>
+      <circle cx="422" cy="68" r="7"/><circle cx="440" cy="133" r="7"/><circle cx="180" cy="33" r="7"/>
+      <circle cx="75"  cy="88"  r="7"/><circle cx="632" cy="134" r="7"/>
+    </g>
+    <g fill="#FFF" font-size="8" font-weight="700" text-anchor="middle">
+      <text x="344" y="103">1</text><text x="392" y="33">2</text><text x="75" y="135">3</text>
+      <text x="422" y="71">4</text><text x="440" y="136">5</text><text x="180" y="36">6</text>
+      <text x="75"  y="91">7</text><text x="632" y="137">8</text>
+    </g>
+  </g>
+
+  <g font-size="11.5" fill="#4A453D">
+    <text x="60" y="428">Confirmed: 2 closets in the whole unit (bedroom 47x24 curtained, office 57x31). 5 windows total — bedroom 2, office 1, living/dining 2. None in the kitchen or bath.</text>
+    <text x="60" y="448">Path to the bedroom: front door 34" &#8594; hall 32" &#8594; office door 32" &#8594; bedroom door 27" x 80" tall.</text>
+  </g>
+</svg>
