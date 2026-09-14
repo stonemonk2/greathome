@@ -1,0 +1,10 @@
+# GitHub Pages builds this repo with Jekyll. Everything tracked is published
+# unless listed here — and .md files are rendered to .html as well, so an
+# exclusion is the only thing that keeps both URLs off the site.
+# These are working notes for the 121a listing: they stay in the repo (scripts
+# and the wiki point at them by path) but must not be served.
+exclude:
+  - 121a/ZILLOW.md
+  - 121a/MEASUREMENTS.md
+  - 121a/RESHOOT.md
+  - 121a/floorplan-draft.svg
