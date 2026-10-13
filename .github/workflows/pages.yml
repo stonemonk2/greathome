@@ -1,0 +1,45 @@
+# Deploy www.greathome.us from a staged copy of the public files only.
+# scripts/build-site.mjs decides what is public; everything else in the repo
+# (package.json, scripts, print PDFs, working notes, unused photos) is never
+# uploaded. Requires Settings → Pages → Source: "GitHub Actions".
+name: Deploy Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; let an in-flight deploy finish rather than cancel it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - uses: actions/configure-pages@v5
+      - name: Stage public files
+        run: node scripts/build-site.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
